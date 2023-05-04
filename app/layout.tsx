@@ -1,12 +1,13 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import MyProfilePic from '@/components/MyProfilePic'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Blog Next App',
-  description: 'dave next app',
+  title: 'Nina Next App',
+  description: 'Nina next app',
 }
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
        className="dark:bg-slate-800">
         <Navbar />
+        <MyProfilePic />
         {children}
         </body>
     </html>
