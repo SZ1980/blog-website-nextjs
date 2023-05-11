@@ -1,19 +1,19 @@
+import Posts from "@/components/Posts"
+import MyProfilePic from "@/components/MyProfilePic"
 
-import MyProfilePic from '@/components/MyProfilePic'
-import Posts from '@/components/Posts'
-
-export const revalidate = 10
+export const revalidate = 86400
 
 export default function Home() {
   return (
-    <div className=" mx-auto">
+    <div className="mx-auto">
       <MyProfilePic />
       <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
         Hello and Welcome 👋&nbsp;
         <span className="whitespace-nowrap">
-          I&apos;m <span className="font-bold">Nina</span>.
+          I m <span className="font-bold">Dave</span>.
         </span>
       </p>
+      {/* @ts-expect-error Server Component */}
       <Posts />
     </div>
   )
